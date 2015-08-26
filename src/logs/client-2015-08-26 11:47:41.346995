@@ -1,0 +1,75 @@
+2015-08-26 11:47:41,347 DEBUG:[connect - client.py, 44] Socket initialization
+2015-08-26 11:47:41,347 DEBUG:[connect - client.py, 44] Connecting to host... [127.0.0.1:5050]
+2015-08-26 11:47:41,348 INFO:Connected to [127.0.0.1:5050]
+2015-08-26 11:47:41,348 DEBUG:[readConfig - client.py, 66] Waiting for configuration from the server.
+2015-08-26 11:47:41,380 DEBUG:[readSocket - client.py, 270] Receiving 7665 bytes from server
+2015-08-26 11:47:41,609 DEBUG:[readConfig - client.py, 66] Configuration received.
+2015-08-26 11:47:41,609 INFO:Importing rule.py from server
+2015-08-26 11:47:41,609 INFO:Importing scrapping.py from server
+2015-08-26 11:47:41,614 INFO:Reloading modules imported for server
+2015-08-26 11:47:41,616 DEBUG:[writeSocket - client.py, 259] Sending 145 bytes to server
+2015-08-26 11:47:41,616 DEBUG:[readConfig - client.py, 66] Sending ACK for configuration.
+2015-08-26 11:47:41,616 INFO:
+
+Starting Crawling/Scrapping sequence...
+2015-08-26 11:47:41,617 DEBUG:[outputThread - client.py, 163] OutputThread started
+2015-08-26 11:47:41,617 DEBUG:[inputThread - client.py, 147] InputThread started
+2015-08-26 11:47:41,617 DEBUG:[interpretingThread - client.py, 178] InterpretingThread started
+2015-08-26 11:47:41,618 DEBUG:[crawlingThread - client.py, 199] CrawlingThread started
+2015-08-26 11:47:41,619 DEBUG:[readSocket - client.py, 270] Receiving 211 bytes from server
+2015-08-26 11:47:41,620 DEBUG:[dispatcher - client.py, 242] Dispatching url packet : http://ifewalter.com/
+2015-08-26 11:47:41,620 DEBUG:[dispatcher - client.py, 242] Dispatched packet of type: URL
+2015-08-26 11:47:41,620 DEBUG:[readSocket - client.py, 270] Receiving 210 bytes from server
+2015-08-26 11:47:41,621 DEBUG:[dispatcher - client.py, 242] Dispatching url packet : http://echoviva.com/
+2015-08-26 11:47:41,621 DEBUG:[dispatcher - client.py, 242] Dispatched packet of type: URL
+2015-08-26 11:47:41,624 DEBUG:[readSocket - client.py, 270] Receiving 208 bytes from server
+2015-08-26 11:47:41,624 DEBUG:[dispatcher - client.py, 242] Dispatching url packet : http://utiset.com/
+2015-08-26 11:47:41,624 DEBUG:[dispatcher - client.py, 242] Dispatched packet of type: URL
+2015-08-26 11:47:41,624 DEBUG:[readSocket - client.py, 270] Receiving 217 bytes from server
+2015-08-26 11:47:41,625 DEBUG:[dispatcher - client.py, 242] Dispatching url packet : http://businessinsider.com/
+2015-08-26 11:47:41,625 DEBUG:[dispatcher - client.py, 242] Dispatched packet of type: URL
+2015-08-26 11:47:41,823 INFO:Scrapping : http://ifewalter.com/
+2015-08-26 11:47:42,993 DEBUG:[visit - scrapping.py, 44] Scrapping complete
+2015-08-26 11:47:42,993 DEBUG:[crawlingThread - client.py, 199] Session 
+http://ifewalter.com/
+Code : 200
+Request time : 0.406915187836
+Bs time : 0.062422990799
+2015-08-26 11:47:42,994 INFO:Scrapping : http://echoviva.com/
+2015-08-26 11:47:42,994 DEBUG:[writeSocket - client.py, 259] Sending 198 bytes to server
+2015-08-26 11:47:42,995 DEBUG:[outputThread - client.py, 163] Sending obj of type URL
+2015-08-26 11:47:42,997 DEBUG:[writeSocket - client.py, 259] Sending 3096 bytes to server
+2015-08-26 11:47:42,998 DEBUG:[outputThread - client.py, 163] Sending obj of type URL
+2015-08-26 11:47:44,406 DEBUG:[visit - scrapping.py, 44] Scrapping complete
+2015-08-26 11:47:44,406 DEBUG:[crawlingThread - client.py, 199] Session 
+http://echoviva.com/
+Code : 200
+Request time : 0.675436973572
+Bs time : 0.352799892426
+2015-08-26 11:47:44,407 INFO:Scrapping : http://utiset.com/
+2015-08-26 11:47:44,407 DEBUG:[writeSocket - client.py, 259] Sending 198 bytes to server
+2015-08-26 11:47:44,408 DEBUG:[outputThread - client.py, 163] Sending obj of type URL
+2015-08-26 11:47:44,411 DEBUG:[writeSocket - client.py, 259] Sending 1990 bytes to server
+2015-08-26 11:47:44,412 DEBUG:[outputThread - client.py, 163] Sending obj of type URL
+2015-08-26 11:47:45,263 INFO:Scrapping failed - RobotParser
+2015-08-26 11:47:45,264 DEBUG:[crawlingThread - client.py, 199] Session 
+http://utiset.com/
+Code : -2
+Request time : 0
+Bs time : 
+2015-08-26 11:47:45,264 INFO:Skipping URL : http://utiset.com/
+2015-08-26 11:47:45,264 INFO:Scrapping : http://businessinsider.com/
+2015-08-26 11:47:45,265 DEBUG:[writeSocket - client.py, 259] Sending 518 bytes to server
+2015-08-26 11:47:45,271 DEBUG:[outputThread - client.py, 163] Sending obj of type URL
+2015-08-26 11:48:02,937 DEBUG:[visit - scrapping.py, 44] Scrapping complete
+2015-08-26 11:48:02,938 DEBUG:[crawlingThread - client.py, 199] Session 
+http://businessinsider.com/
+Code : 200
+Request time : 5.3196079731
+Bs time : 4.77456212044
+2015-08-26 11:48:02,938 DEBUG:[writeSocket - client.py, 259] Sending 198 bytes to server
+2015-08-26 11:48:02,938 DEBUG:[outputThread - client.py, 163] Sending obj of type URL
+2015-08-26 11:48:02,940 DEBUG:[writeSocket - client.py, 259] Sending 8688 bytes to server
+2015-08-26 11:48:02,940 DEBUG:[outputThread - client.py, 163] Sending obj of type URL
+2015-08-26 11:48:51,013 INFO:
+Lost connection to server [127.0.0.1:5050]

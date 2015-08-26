@@ -1,0 +1,70 @@
+2015-08-26 11:40:48,547 DEBUG:[setup - server.py, 52] Socket initialization
+2015-08-26 11:40:48,547 INFO:Listening on [127.0.0.1:5050]
+2015-08-26 11:40:48,547 INFO:Waiting for working nodes to connect...
+2015-08-26 11:40:49,029 INFO:[127.0.0.1:50424] Working node connected
+2015-08-26 11:40:49,030 DEBUG:[run - server.py, 64] Starting beginCrawlingProcedure
+2015-08-26 11:40:49,030 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:50424] Sending configuration
+2015-08-26 11:40:49,062 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:50424] Sending 7659 bytes
+2015-08-26 11:40:49,062 INFO:Starting server mainRoutine
+2015-08-26 11:40:49,062 INFO:Starting server urlDispatcher
+2015-08-26 11:40:49,063 INFO:Starting server storageRoutine
+2015-08-26 11:40:49,064 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:50424] Configuration sent waiting for ACK
+2015-08-26 11:40:49,104 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50424] Receiving 129 bytes
+2015-08-26 11:40:49,106 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:50424] Working node ACK received (configuration)
+2015-08-26 11:40:49,108 DEBUG:[inputThread - server.py, 242] [127.0.0.1:50424] Listening for packets
+2015-08-26 11:40:49,108 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:50424] Sending 227 bytes
+2015-08-26 11:40:49,109 DEBUG:[outputThread - server.py, 255] [127.0.0.1:50424] Sending URL http://ifewalter.com/
+2015-08-26 11:40:49,111 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:50424] Sending 226 bytes
+2015-08-26 11:40:49,111 DEBUG:[outputThread - server.py, 255] [127.0.0.1:50424] Sending URL http://echoviva.com/
+2015-08-26 11:40:49,114 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:50424] Sending 224 bytes
+2015-08-26 11:40:49,115 DEBUG:[outputThread - server.py, 255] [127.0.0.1:50424] Sending URL http://utiset.com/
+2015-08-26 11:40:49,116 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:50424] Sending 233 bytes
+2015-08-26 11:40:49,117 DEBUG:[outputThread - server.py, 255] [127.0.0.1:50424] Sending URL http://businessinsider.com/
+2015-08-26 11:40:50,507 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50424] Receiving 182 bytes
+2015-08-26 11:40:50,508 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:40:50,509 INFO:[127.0.0.1:50424] Receiving scrapped URLs :   0   /    0    -   0  
+2015-08-26 11:40:50,509 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50424] Receiving 4528 bytes
+2015-08-26 11:40:50,600 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:40:50,600 INFO:[127.0.0.1:50424] Receiving scrapped data
+2015-08-26 11:40:50,601 DEBUG:[dispatcher - server.py, 271] [127.0.0.1:50424] Receiving scrapped datahttp://ifewalter.com/
+2015-08-26 11:40:50,604 ERROR:
+Traceback (most recent call last):
+  File "server.py", line 191, in storageRoutine
+    storage.writeToFile(session, session.dataContainer)
+  File "/Users/iFewalter/Workspace/Library/Zeek/src/modules/storage.py", line 14, in writeToFile
+    dataFd.write(unicode(container.content.replace(",",""),'utf-8') + "\n")
+TypeError: decoding Unicode is not supported
+
+2015-08-26 11:40:51,837 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50424] Receiving 182 bytes
+2015-08-26 11:40:51,838 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:40:51,838 INFO:[127.0.0.1:50424] Receiving scrapped URLs :   0   /    0    -   0  
+2015-08-26 11:40:51,840 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50424] Receiving 2058 bytes
+2015-08-26 11:40:51,842 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:40:51,842 INFO:[127.0.0.1:50424] Receiving scrapped data
+2015-08-26 11:40:51,842 DEBUG:[dispatcher - server.py, 271] [127.0.0.1:50424] Receiving scrapped datahttp://echoviva.com/
+2015-08-26 11:40:51,846 ERROR:
+Traceback (most recent call last):
+  File "server.py", line 191, in storageRoutine
+    storage.writeToFile(session, session.dataContainer)
+  File "/Users/iFewalter/Workspace/Library/Zeek/src/modules/storage.py", line 14, in writeToFile
+    dataFd.write(unicode(container.content.replace(",",""),'utf-8') + "\n")
+TypeError: decoding Unicode is not supported
+
+2015-08-26 11:40:52,711 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50424] Receiving 502 bytes
+2015-08-26 11:40:52,712 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:40:52,713 INFO:[127.0.0.1:50424] Skipped (request not allowed - robot parser) : http://utiset.com/
+2015-08-26 11:41:05,290 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50424] Receiving 182 bytes
+2015-08-26 11:41:05,296 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:41:05,297 INFO:[127.0.0.1:50424] Receiving scrapped URLs :   0   /    0    -   1  
+2015-08-26 11:41:05,298 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50424] Receiving 17192 bytes
+2015-08-26 11:41:05,300 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:41:05,300 INFO:[127.0.0.1:50424] Receiving scrapped data
+2015-08-26 11:41:05,300 DEBUG:[dispatcher - server.py, 271] [127.0.0.1:50424] Receiving scrapped datahttp://businessinsider.com/
+2015-08-26 11:41:05,302 ERROR:
+Traceback (most recent call last):
+  File "server.py", line 191, in storageRoutine
+    storage.writeToFile(session, session.dataContainer)
+  File "/Users/iFewalter/Workspace/Library/Zeek/src/modules/storage.py", line 14, in writeToFile
+    dataFd.write(unicode(container.content.replace(",",""),'utf-8') + "\n")
+TypeError: decoding Unicode is not supported
+

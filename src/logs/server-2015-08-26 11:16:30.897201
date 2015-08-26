@@ -1,0 +1,38 @@
+2015-08-26 11:16:30,897 DEBUG:[setup - server.py, 52] Socket initialization
+2015-08-26 11:16:30,897 INFO:Listening on [127.0.0.1:5050]
+2015-08-26 11:16:30,898 INFO:Waiting for working nodes to connect...
+2015-08-26 11:16:36,987 INFO:[127.0.0.1:50159] Working node connected
+2015-08-26 11:16:36,987 DEBUG:[run - server.py, 64] Starting beginCrawlingProcedure
+2015-08-26 11:16:36,987 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:50159] Sending configuration
+2015-08-26 11:16:37,008 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:50159] Sending 7515 bytes
+2015-08-26 11:16:37,008 INFO:Starting server urlDispatcher
+2015-08-26 11:16:37,008 INFO:Starting server storageRoutine
+2015-08-26 11:16:37,009 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:50159] Configuration sent waiting for ACK
+2015-08-26 11:16:37,009 INFO:Starting server mainRoutine
+2015-08-26 11:16:37,099 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50159] Receiving 129 bytes
+2015-08-26 11:16:37,102 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:50159] Working node ACK received (configuration)
+2015-08-26 11:16:37,103 DEBUG:[inputThread - server.py, 242] [127.0.0.1:50159] Listening for packets
+2015-08-26 11:16:37,103 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:50159] Sending 227 bytes
+2015-08-26 11:16:37,105 DEBUG:[outputThread - server.py, 255] [127.0.0.1:50159] Sending URL http://ifewalter.com/
+2015-08-26 11:16:37,106 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:50159] Sending 226 bytes
+2015-08-26 11:16:37,107 DEBUG:[outputThread - server.py, 255] [127.0.0.1:50159] Sending URL http://echoviva.com/
+2015-08-26 11:16:37,110 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:50159] Sending 224 bytes
+2015-08-26 11:16:37,110 DEBUG:[outputThread - server.py, 255] [127.0.0.1:50159] Sending URL http://utiset.com/
+2015-08-26 11:16:39,093 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50159] Receiving 182 bytes
+2015-08-26 11:16:39,094 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:16:39,095 INFO:[127.0.0.1:50159] Receiving scrapped URLs :   0   /    0    -   0  
+2015-08-26 11:16:39,095 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50159] Receiving 3077 bytes
+2015-08-26 11:16:39,189 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:16:39,190 INFO:[127.0.0.1:50159] Receiving scrapped data
+2015-08-26 11:16:39,191 DEBUG:[dispatcher - server.py, 271] [127.0.0.1:50159] Receiving scrapped datahttp://ifewalter.com/
+2015-08-26 11:16:39,195 ERROR:Unhandled exception in storage.py
+2015-08-26 11:16:41,031 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50159] Receiving 182 bytes
+2015-08-26 11:16:41,032 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:16:41,032 INFO:[127.0.0.1:50159] Receiving scrapped URLs :   0   /    0    -   0  
+2015-08-26 11:16:41,035 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50159] Receiving 1974 bytes
+2015-08-26 11:16:41,037 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:16:41,038 INFO:[127.0.0.1:50159] Receiving scrapped data
+2015-08-26 11:16:41,038 DEBUG:[dispatcher - server.py, 271] [127.0.0.1:50159] Receiving scrapped datahttp://echoviva.com/
+2015-08-26 11:16:42,204 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50159] Receiving 502 bytes
+2015-08-26 11:16:42,205 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:16:42,207 INFO:[127.0.0.1:50159] Skipped (request not allowed - robot parser) : http://utiset.com/

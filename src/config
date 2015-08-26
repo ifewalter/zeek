@@ -7,7 +7,7 @@ hostAddr = 127.0.0.1
 hostPort = 5050
 
 [common]
-verbose = False
+verbose = True
 logPath = logs/
 userAgent = Zeek-1.0a
 crawling = dynamic
@@ -17,7 +17,7 @@ crawlDelay = 0
 [dynamic]
 domainRestricted = true
 requestLimit = 0
-rootUrls = http://www.businessinsider.com/
+rootUrls = []
 
 [static]
 rootUrlsPath = url.txt

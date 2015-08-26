@@ -2,6 +2,7 @@ import ConfigParser
 import inspect
 import os
 import sys
+from pymongo import MongoClient
 
 
 class Configuration():
@@ -67,9 +68,28 @@ def configParser():
     if config.crawling == 'dynamic':
         domainRestricted = configParser.get('dynamic', 'domainRestricted')
         config.requestLimit = configParser.getint('dynamic', 'requestLimit')
-        rootUrls = configParser.get('dynamic', 'rootUrls')
-        rootUrls = "".join(rootUrls.split())
-        config.rootUrls = rootUrls.split(',')
+        # rootUrls = configParser.get('dynamic', 'rootUrls')
+        # rootUrls = "".join(rootUrls.split())
+        # config.rootUrls = rootUrls.split(',')
+
+
+
+
+        #connect to database and fetch root urls
+        #client = MongoClient(host="192.168.207.47", port=27100)
+        client = MongoClient(host="127.0.0.1", port=27017)
+        db = client["summer_db"]
+        table = db["root_sources"]
+
+
+
+        results = table.find()
+
+        for result_item in results:
+
+            config.rootUrls.append(result_item)
+
+        client.close()
 
         if domainRestricted == "True" or domainRestricted == "true":
             config.domainRestricted = True

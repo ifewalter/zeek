@@ -1,0 +1,26 @@
+2015-08-26 10:55:20,603 DEBUG:[setup - server.py, 52] Socket initialization
+2015-08-26 10:55:20,603 INFO:Listening on [127.0.0.1:5050]
+2015-08-26 10:55:20,604 INFO:Waiting for working nodes to connect...
+2015-08-26 10:55:53,502 INFO:[127.0.0.1:49881] Working node connected
+2015-08-26 10:55:53,503 DEBUG:[run - server.py, 64] Starting beginCrawlingProcedure
+2015-08-26 10:55:53,503 DEBUG:[sendConfig - server.py, 219] [127.0.0.1:49881] Sending configuration
+2015-08-26 10:55:54,091 INFO:Starting server storageRoutine
+2015-08-26 10:55:54,092 DEBUG:[writeSocket - server.py, 318] [127.0.0.1:49881] Sending 7495 bytes
+2015-08-26 10:55:54,092 INFO:Starting server urlDispatcher
+2015-08-26 10:55:54,094 INFO:Starting server mainRoutine
+2015-08-26 10:55:54,095 DEBUG:[sendConfig - server.py, 219] [127.0.0.1:49881] Configuration sent waiting for ACK
+2015-08-26 10:55:55,914 DEBUG:[readSocket - server.py, 326] [127.0.0.1:49881] Receiving 129 bytes
+2015-08-26 10:55:55,915 DEBUG:[sendConfig - server.py, 219] [127.0.0.1:49881] Working node ACK received (configuration)
+2015-08-26 10:55:55,916 DEBUG:[writeSocket - server.py, 318] [127.0.0.1:49881] Sending 265 bytes
+2015-08-26 10:55:55,916 DEBUG:[inputThread - server.py, 243] [127.0.0.1:49881] Listening for packets
+2015-08-26 10:55:55,916 DEBUG:[outputThread - server.py, 256] [127.0.0.1:49881] Sending URL http://ifewalter.com
+2015-08-26 10:55:55,917 DEBUG:[writeSocket - server.py, 318] [127.0.0.1:49881] Sending 262 bytes
+2015-08-26 10:55:55,917 DEBUG:[outputThread - server.py, 256] [127.0.0.1:49881] Sending URL http://utiset.com
+2015-08-26 10:55:55,918 DEBUG:[writeSocket - server.py, 318] [127.0.0.1:49881] Sending 267 bytes
+2015-08-26 10:55:55,918 DEBUG:[outputThread - server.py, 256] [127.0.0.1:49881] Sending URL http://echoviva.com
+2015-08-26 10:55:57,918 DEBUG:[readSocket - server.py, 326] [127.0.0.1:49881] Receiving 555 bytes
+2015-08-26 10:55:58,575 DEBUG:[dispatcher - server.py, 272] Dispatching packet of type: URL
+2015-08-26 10:56:02,141 DEBUG:[readSocket - server.py, 326] [127.0.0.1:49881] Receiving 519 bytes
+2015-08-26 10:56:02,141 DEBUG:[dispatcher - server.py, 272] Dispatching packet of type: URL
+2015-08-26 10:56:11,531 DEBUG:[readSocket - server.py, 326] [127.0.0.1:49881] Receiving 554 bytes
+2015-08-26 10:56:11,532 DEBUG:[dispatcher - server.py, 272] Dispatching packet of type: URL

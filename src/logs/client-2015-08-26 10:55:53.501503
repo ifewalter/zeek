@@ -1,0 +1,95 @@
+2015-08-26 10:55:53,501 DEBUG:[connect - client.py, 44] Socket initialization
+2015-08-26 10:55:53,502 DEBUG:[connect - client.py, 44] Connecting to host... [127.0.0.1:5050]
+2015-08-26 10:55:53,502 INFO:Connected to [127.0.0.1:5050]
+2015-08-26 10:55:53,502 DEBUG:[readConfig - client.py, 66] Waiting for configuration from the server.
+2015-08-26 10:55:54,093 DEBUG:[readSocket - client.py, 270] Receiving 7479 bytes from server
+2015-08-26 10:55:55,799 DEBUG:[readConfig - client.py, 66] Configuration received.
+2015-08-26 10:55:55,799 INFO:Importing rule.py from server
+2015-08-26 10:55:55,826 INFO:Importing scrapping.py from server
+2015-08-26 10:55:55,868 INFO:Reloading modules imported for server
+2015-08-26 10:55:55,914 DEBUG:[writeSocket - client.py, 259] Sending 145 bytes to server
+2015-08-26 10:55:55,914 DEBUG:[readConfig - client.py, 66] Sending ACK for configuration.
+2015-08-26 10:55:55,914 INFO:
+
+Starting Crawling/Scrapping sequence...
+2015-08-26 10:55:55,914 DEBUG:[outputThread - client.py, 163] OutputThread started
+2015-08-26 10:55:55,915 DEBUG:[crawlingThread - client.py, 199] CrawlingThread started
+2015-08-26 10:55:55,915 DEBUG:[interpretingThread - client.py, 178] InterpretingThread started
+2015-08-26 10:55:55,915 DEBUG:[inputThread - client.py, 147] InputThread started
+2015-08-26 10:55:55,917 DEBUG:[readSocket - client.py, 270] Receiving 249 bytes from server
+2015-08-26 10:55:55,917 DEBUG:[dispatcher - client.py, 242] Dispatching url packet : http://ifewalter.com
+2015-08-26 10:55:55,917 DEBUG:[dispatcher - client.py, 242] Dispatched packet of type: URL
+2015-08-26 10:55:55,917 DEBUG:[readSocket - client.py, 270] Receiving 246 bytes from server
+2015-08-26 10:55:55,918 DEBUG:[dispatcher - client.py, 242] Dispatching url packet : http://utiset.com
+2015-08-26 10:55:55,918 DEBUG:[dispatcher - client.py, 242] Dispatched packet of type: URL
+2015-08-26 10:55:55,918 DEBUG:[readSocket - client.py, 270] Receiving 251 bytes from server
+2015-08-26 10:55:55,918 DEBUG:[dispatcher - client.py, 242] Dispatching url packet : http://echoviva.com
+2015-08-26 10:55:55,918 DEBUG:[dispatcher - client.py, 242] Dispatched packet of type: URL
+2015-08-26 10:55:56,119 INFO:Scrapping : http://ifewalter.com
+2015-08-26 10:55:57,808 INFO:Scrapping failed - Un-handled
+2015-08-26 10:55:57,916 ERROR:
+Traceback (most recent call last):
+  File "/Users/iFewalter/Workspace/Library/Zeek/src/modules/scrapping.py", line 100, in visit
+    dataContainer = rule.scrape(url, bs)
+  File "/Users/iFewalter/Workspace/Library/Zeek/src/modules/rule.py", line 31, in scrape
+    comments = bs.findAll(text=lambda text: isinstance(text, bs4.BeautifulSoup.Comment))
+  File "/Library/Python/2.7/site-packages/bs4/element.py", line 1180, in find_all
+    return self._find_all(name, attrs, text, limit, generator, **kwargs)
+  File "/Library/Python/2.7/site-packages/bs4/element.py", line 505, in _find_all
+    found = strainer.search(i)
+  File "/Library/Python/2.7/site-packages/bs4/element.py", line 1544, in search
+    if not self.name and not self.attrs and self._matches(markup, self.text):
+  File "/Library/Python/2.7/site-packages/bs4/element.py", line 1578, in _matches
+    return match_against(markup)
+  File "/Users/iFewalter/Workspace/Library/Zeek/src/modules/rule.py", line 31, in <lambda>
+    comments = bs.findAll(text=lambda text: isinstance(text, bs4.BeautifulSoup.Comment))
+AttributeError: type object 'BeautifulSoup' has no attribute 'Comment'
+
+2015-08-26 10:55:57,916 DEBUG:[crawlingThread - client.py, 199] Session 
+http://ifewalter.com
+Code : -100
+Request time : 0
+Bs time : 
+2015-08-26 10:55:57,916 INFO:Skipping URL : http://ifewalter.com
+2015-08-26 10:55:57,917 DEBUG:[writeSocket - client.py, 259] Sending 571 bytes to server
+2015-08-26 10:55:57,917 INFO:Scrapping : http://utiset.com
+2015-08-26 10:55:57,918 DEBUG:[outputThread - client.py, 163] Sending obj of type URL
+2015-08-26 10:56:02,131 INFO:Scrapping failed - RobotParser
+2015-08-26 10:56:02,131 DEBUG:[crawlingThread - client.py, 199] Session 
+http://utiset.com
+Code : -2
+Request time : 0
+Bs time : 
+2015-08-26 10:56:02,131 INFO:Skipping URL : http://utiset.com
+2015-08-26 10:56:02,139 INFO:Scrapping : http://echoviva.com
+2015-08-26 10:56:02,140 DEBUG:[writeSocket - client.py, 259] Sending 535 bytes to server
+2015-08-26 10:56:02,140 DEBUG:[outputThread - client.py, 163] Sending obj of type URL
+2015-08-26 10:56:11,530 INFO:Scrapping failed - Un-handled
+2015-08-26 10:56:11,530 ERROR:
+Traceback (most recent call last):
+  File "/Users/iFewalter/Workspace/Library/Zeek/src/modules/scrapping.py", line 100, in visit
+    dataContainer = rule.scrape(url, bs)
+  File "/Users/iFewalter/Workspace/Library/Zeek/src/modules/rule.py", line 31, in scrape
+    comments = bs.findAll(text=lambda text: isinstance(text, bs4.BeautifulSoup.Comment))
+  File "/Library/Python/2.7/site-packages/bs4/element.py", line 1180, in find_all
+    return self._find_all(name, attrs, text, limit, generator, **kwargs)
+  File "/Library/Python/2.7/site-packages/bs4/element.py", line 505, in _find_all
+    found = strainer.search(i)
+  File "/Library/Python/2.7/site-packages/bs4/element.py", line 1544, in search
+    if not self.name and not self.attrs and self._matches(markup, self.text):
+  File "/Library/Python/2.7/site-packages/bs4/element.py", line 1578, in _matches
+    return match_against(markup)
+  File "/Users/iFewalter/Workspace/Library/Zeek/src/modules/rule.py", line 31, in <lambda>
+    comments = bs.findAll(text=lambda text: isinstance(text, bs4.BeautifulSoup.Comment))
+AttributeError: type object 'BeautifulSoup' has no attribute 'Comment'
+
+2015-08-26 10:56:11,530 DEBUG:[crawlingThread - client.py, 199] Session 
+http://echoviva.com
+Code : -100
+Request time : 0
+Bs time : 
+2015-08-26 10:56:11,530 INFO:Skipping URL : http://echoviva.com
+2015-08-26 10:56:11,531 DEBUG:[writeSocket - client.py, 259] Sending 570 bytes to server
+2015-08-26 10:56:11,531 DEBUG:[outputThread - client.py, 163] Sending obj of type URL
+2015-08-26 10:58:12,158 INFO:
+Lost connection to server [127.0.0.1:5050]

@@ -1,0 +1,46 @@
+2015-08-26 11:47:40,196 DEBUG:[setup - server.py, 52] Socket initialization
+2015-08-26 11:47:40,208 INFO:Listening on [127.0.0.1:5050]
+2015-08-26 11:47:40,208 INFO:Waiting for working nodes to connect...
+2015-08-26 11:47:41,349 INFO:[127.0.0.1:50544] Working node connected
+2015-08-26 11:47:41,349 DEBUG:[run - server.py, 64] Starting beginCrawlingProcedure
+2015-08-26 11:47:41,349 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:50544] Sending configuration
+2015-08-26 11:47:41,378 INFO:Starting server mainRoutine
+2015-08-26 11:47:41,380 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:50544] Sending 7681 bytes
+2015-08-26 11:47:41,380 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:50544] Configuration sent waiting for ACK
+2015-08-26 11:47:41,380 INFO:Starting server storageRoutine
+2015-08-26 11:47:41,380 INFO:Starting server urlDispatcher
+2015-08-26 11:47:41,617 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50544] Receiving 129 bytes
+2015-08-26 11:47:41,618 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:50544] Working node ACK received (configuration)
+2015-08-26 11:47:41,618 DEBUG:[inputThread - server.py, 242] [127.0.0.1:50544] Listening for packets
+2015-08-26 11:47:41,619 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:50544] Sending 227 bytes
+2015-08-26 11:47:41,619 DEBUG:[outputThread - server.py, 255] [127.0.0.1:50544] Sending URL http://ifewalter.com/
+2015-08-26 11:47:41,620 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:50544] Sending 226 bytes
+2015-08-26 11:47:41,621 DEBUG:[outputThread - server.py, 255] [127.0.0.1:50544] Sending URL http://echoviva.com/
+2015-08-26 11:47:41,621 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:50544] Sending 224 bytes
+2015-08-26 11:47:41,624 DEBUG:[outputThread - server.py, 255] [127.0.0.1:50544] Sending URL http://utiset.com/
+2015-08-26 11:47:41,624 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:50544] Sending 233 bytes
+2015-08-26 11:47:41,624 DEBUG:[outputThread - server.py, 255] [127.0.0.1:50544] Sending URL http://businessinsider.com/
+2015-08-26 11:47:42,995 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50544] Receiving 182 bytes
+2015-08-26 11:47:42,996 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:47:42,997 INFO:[127.0.0.1:50544] Receiving scrapped URLs :   0   /    0    -   0  
+2015-08-26 11:47:42,999 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50544] Receiving 3080 bytes
+2015-08-26 11:47:43,296 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:47:43,297 INFO:[127.0.0.1:50544] Receiving scrapped data
+2015-08-26 11:47:43,297 DEBUG:[dispatcher - server.py, 271] [127.0.0.1:50544] Receiving scrapped datahttp://ifewalter.com/
+2015-08-26 11:47:44,408 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50544] Receiving 182 bytes
+2015-08-26 11:47:44,408 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:47:44,409 INFO:[127.0.0.1:50544] Receiving scrapped URLs :   0   /    0    -   0  
+2015-08-26 11:47:44,412 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50544] Receiving 1974 bytes
+2015-08-26 11:47:44,413 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:47:44,414 INFO:[127.0.0.1:50544] Receiving scrapped data
+2015-08-26 11:47:44,414 DEBUG:[dispatcher - server.py, 271] [127.0.0.1:50544] Receiving scrapped datahttp://echoviva.com/
+2015-08-26 11:47:45,271 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50544] Receiving 502 bytes
+2015-08-26 11:47:45,273 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:47:45,275 INFO:[127.0.0.1:50544] Skipped (request not allowed - robot parser) : http://utiset.com/
+2015-08-26 11:48:02,939 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50544] Receiving 182 bytes
+2015-08-26 11:48:02,939 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:48:02,940 INFO:[127.0.0.1:50544] Receiving scrapped URLs :   0   /    0    -   1  
+2015-08-26 11:48:02,941 DEBUG:[readSocket - server.py, 325] [127.0.0.1:50544] Receiving 8672 bytes
+2015-08-26 11:48:02,942 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-26 11:48:02,943 INFO:[127.0.0.1:50544] Receiving scrapped data
+2015-08-26 11:48:02,943 DEBUG:[dispatcher - server.py, 271] [127.0.0.1:50544] Receiving scrapped datahttp://businessinsider.com/

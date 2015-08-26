@@ -1,0 +1,22 @@
+2015-08-26 11:04:08,676 DEBUG:[setup - server.py, 52] Socket initialization
+2015-08-26 11:04:08,676 INFO:Listening on [127.0.0.1:5050]
+2015-08-26 11:04:08,676 INFO:Waiting for working nodes to connect...
+2015-08-26 11:04:20,796 INFO:[127.0.0.1:49963] Working node connected
+2015-08-26 11:04:20,796 DEBUG:[run - server.py, 64] Starting beginCrawlingProcedure
+2015-08-26 11:04:20,796 DEBUG:[sendConfig - server.py, 219] [127.0.0.1:49963] Sending configuration
+2015-08-26 11:04:20,896 DEBUG:[writeSocket - server.py, 318] [127.0.0.1:49963] Sending 7512 bytes
+2015-08-26 11:04:20,896 INFO:Starting server mainRoutine
+2015-08-26 11:04:20,896 INFO:Starting server urlDispatcher
+2015-08-26 11:04:20,897 DEBUG:[sendConfig - server.py, 219] [127.0.0.1:49963] Configuration sent waiting for ACK
+2015-08-26 11:04:20,896 INFO:Starting server storageRoutine
+2015-08-26 11:04:21,788 DEBUG:[readSocket - server.py, 326] [127.0.0.1:49963] Receiving 129 bytes
+2015-08-26 11:04:21,790 DEBUG:[sendConfig - server.py, 219] [127.0.0.1:49963] Working node ACK received (configuration)
+2015-08-26 11:04:21,791 DEBUG:[writeSocket - server.py, 318] [127.0.0.1:49963] Sending 265 bytes
+2015-08-26 11:04:21,791 DEBUG:[inputThread - server.py, 243] [127.0.0.1:49963] Listening for packets
+2015-08-26 11:04:21,791 DEBUG:[outputThread - server.py, 256] [127.0.0.1:49963] Sending URL http://ifewalter.com
+2015-08-26 11:04:21,799 DEBUG:[writeSocket - server.py, 318] [127.0.0.1:49963] Sending 262 bytes
+2015-08-26 11:04:21,799 DEBUG:[outputThread - server.py, 256] [127.0.0.1:49963] Sending URL http://utiset.com
+2015-08-26 11:04:21,800 DEBUG:[writeSocket - server.py, 318] [127.0.0.1:49963] Sending 267 bytes
+2015-08-26 11:04:21,801 DEBUG:[outputThread - server.py, 256] [127.0.0.1:49963] Sending URL http://echoviva.com
+2015-08-26 11:04:23,388 INFO:[127.0.0.1:49963] Lost connection
+2015-08-26 11:04:23,611 INFO:[127.0.0.1:49963] Disconnecting

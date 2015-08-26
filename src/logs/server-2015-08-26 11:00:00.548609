@@ -1,0 +1,31 @@
+2015-08-26 11:00:00,549 DEBUG:[setup - server.py, 52] Socket initialization
+2015-08-26 11:00:00,549 INFO:Listening on [127.0.0.1:5050]
+2015-08-26 11:00:00,549 INFO:Waiting for working nodes to connect...
+2015-08-26 11:00:54,339 INFO:[127.0.0.1:49914] Working node connected
+2015-08-26 11:00:54,339 DEBUG:[run - server.py, 64] Starting beginCrawlingProcedure
+2015-08-26 11:00:54,340 DEBUG:[sendConfig - server.py, 219] [127.0.0.1:49914] Sending configuration
+2015-08-26 11:00:54,340 INFO:Starting server urlDispatcher
+2015-08-26 11:00:54,340 INFO:Starting server storageRoutine
+2015-08-26 11:00:54,340 INFO:Starting server mainRoutine
+2015-08-26 11:00:54,369 DEBUG:[writeSocket - server.py, 318] [127.0.0.1:49914] Sending 7512 bytes
+2015-08-26 11:00:54,379 DEBUG:[sendConfig - server.py, 219] [127.0.0.1:49914] Configuration sent waiting for ACK
+2015-08-26 11:00:54,408 DEBUG:[readSocket - server.py, 326] [127.0.0.1:49914] Receiving 129 bytes
+2015-08-26 11:00:54,408 DEBUG:[sendConfig - server.py, 219] [127.0.0.1:49914] Working node ACK received (configuration)
+2015-08-26 11:00:54,409 DEBUG:[inputThread - server.py, 243] [127.0.0.1:49914] Listening for packets
+2015-08-26 11:00:54,410 DEBUG:[writeSocket - server.py, 318] [127.0.0.1:49914] Sending 265 bytes
+2015-08-26 11:00:54,410 DEBUG:[outputThread - server.py, 256] [127.0.0.1:49914] Sending URL http://ifewalter.com
+2015-08-26 11:00:54,412 DEBUG:[writeSocket - server.py, 318] [127.0.0.1:49914] Sending 262 bytes
+2015-08-26 11:00:54,413 DEBUG:[outputThread - server.py, 256] [127.0.0.1:49914] Sending URL http://utiset.com
+2015-08-26 11:00:54,415 DEBUG:[writeSocket - server.py, 318] [127.0.0.1:49914] Sending 267 bytes
+2015-08-26 11:00:54,415 DEBUG:[outputThread - server.py, 256] [127.0.0.1:49914] Sending URL http://echoviva.com
+2015-08-26 11:00:56,462 INFO:[127.0.0.1:49914] Lost connection
+2015-08-26 11:00:56,532 INFO:[127.0.0.1:49914] Disconnecting
+2015-08-26 11:02:35,582 INFO:[127.0.0.1:49953] Working node connected
+2015-08-26 11:02:35,585 DEBUG:[sendConfig - server.py, 219] [127.0.0.1:49953] Sending configuration
+2015-08-26 11:02:35,586 DEBUG:[writeSocket - server.py, 318] [127.0.0.1:49953] Sending 7512 bytes
+2015-08-26 11:02:35,587 DEBUG:[sendConfig - server.py, 219] [127.0.0.1:49953] Configuration sent waiting for ACK
+2015-08-26 11:02:36,758 DEBUG:[readSocket - server.py, 326] [127.0.0.1:49953] Receiving 129 bytes
+2015-08-26 11:02:36,760 DEBUG:[sendConfig - server.py, 219] [127.0.0.1:49953] Working node ACK received (configuration)
+2015-08-26 11:02:36,760 DEBUG:[inputThread - server.py, 243] [127.0.0.1:49953] Listening for packets
+2015-08-26 11:03:04,501 INFO:[127.0.0.1:49953] Lost connection
+2015-08-26 11:03:04,611 INFO:[127.0.0.1:49953] Disconnecting

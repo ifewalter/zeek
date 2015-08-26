@@ -132,13 +132,16 @@ class Server:
 
     def mainRoutine(self):
         """To Come in da future. For now, no use"""
+
         logger.log(logging.INFO, "Starting server mainRoutine")
 
         for url in self.configurationPayload.config.rootUrls:
-            payload = protocol.URLPayload([str(url)], protocol.URLPayload.TOVISIT)
+            payload = protocol.URLPayload([str(url['domain'])], protocol.URLPayload.TOVISIT)
             packet = protocol.Packet(protocol.URL, payload)
-            urlVisited[url] = True
+            urlVisited[url['domain']] = True
             outputQueue.put(packet)
+
+
 
             if self.configurationPayload.crawlingType == protocol.ConfigurationPayload.STATIC_CRAWLING and (self.configurationPayload.config.crawlDelay != 0):
                 if self.configurationPayload.config.crawlDelay != 0:
@@ -160,7 +163,7 @@ class Server:
                         break
 
                 elif self.configurationPayload.crawlingType == protocol.ConfigurationPayload.STATIC_CRAWLING:
-                    if (len(skippedURLlist+visitedURLlist) == len(self.configurationPayload.config.rootUrls)):
+                    if len(skippedURLlist+visitedURLlist) == len(self.configurationPayload.config.rootUrls['domain']):
                         break
                     else:
                         time.sleep(0.3)
