@@ -77,7 +77,7 @@ class Scrapper:
 
             # parsing
             start_time = time.time()
-            bs = BeautifulSoup(data)
+            bs = BeautifulSoup(data, 'lxml')
             bsParsingTime = time.time() - start_time
 
             # url scrapping - dynamic crawling
