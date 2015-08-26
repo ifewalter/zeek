@@ -1,7 +1,7 @@
 import logging
 import logger
 import atexit
-
+from pymongo import MongoClient
 dataFd = None
 errorFd = None
 
@@ -24,6 +24,17 @@ def writeToFile(session, container):
         if dataFd is None:
             dataFd = open(container.domain+'/output'+my_random_string(6)+'.txt', 'w')
         dataFd.write(container.content.replace(",","").encode('utf-8') + "\n")
+
+         #connect to database and fetch root urls
+        client = MongoClient(host="192.168.207.47", port=27100)
+        #client = MongoClient(host="127.0.0.1", port=27017)
+        db = client["summer_db"]
+        table = db["news_articles"]
+
+        results = table.insert({"domain":container.domain,"news_content":container.content,"news_title": container.title})
+
+
+
     elif session.failed:
         if errorFd is None:
             errorFd = open('error.txt', 'w')
