@@ -37,6 +37,7 @@ def writeToFile(session, container):
 
         results = table.insert({"domain":container.domain,"news_content":container.content.replace(",","").encode('utf-8'),"news_title": container.title})
         client.close()
+        dataFd.close()
 
 
 
