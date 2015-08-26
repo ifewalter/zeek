@@ -35,7 +35,7 @@ def writeToFile(session, container):
         db = client["summer_db"]
         table = db["news_articles"]
 
-        results = table.insert({"domain":container.domain,"news_content":container.content,"news_title": container.title})
+        results = table.insert({"domain":container.domain,"news_content":container.content.replace(",","").encode('utf-8'),"news_title": container.title})
         db.close()
 
 

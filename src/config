@@ -11,7 +11,7 @@ verbose = True
 logPath = logs/
 userAgent = utiset.com-making_data_intelligent-block_if_unwanted
 crawling = dynamic
-robotParser = true
+robotParser = false
 crawlDelay = 5
 
 [dynamic]
