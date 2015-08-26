@@ -1,4 +1,5 @@
 import logging
+import os
 import logger
 import atexit
 from pymongo import MongoClient
@@ -22,7 +23,10 @@ def writeToFile(session, container):
     # try:
     if (not session.failed):
         if dataFd is None:
-            dataFd = open(container.domain+'/output'+my_random_string(6)+'.txt', 'w')
+            filename = container.domain+'/output'+my_random_string(6)+'.txt'
+            if not os.path.exists(os.path.dirname(filename)):
+                os.makedirs(os.path.dirname(filename))
+            dataFd = open(filename, 'w')
         dataFd.write(container.content.replace(",","").encode('utf-8') + "\n")
 
          #connect to database and fetch root urls
