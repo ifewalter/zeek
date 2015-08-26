@@ -1,9 +1,9 @@
 [server]
-listeningAddr = 127.0.0.1
+listeningAddr = 192.168.196.44
 listeningPort = 5050
 
 [client]
-hostAddr = 127.0.0.1
+hostAddr = 192.168.196.44
 hostPort = 5050
 
 [common]
