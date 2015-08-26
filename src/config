@@ -9,10 +9,10 @@ hostPort = 5050
 [common]
 verbose = True
 logPath = logs/
-userAgent = Zeek-1.0a
+userAgent = utiset.com-making_data_intelligent-block_if_unwanted
 crawling = dynamic
 robotParser = true
-crawlDelay = 0
+crawlDelay = 5
 
 [dynamic]
 domainRestricted = true
