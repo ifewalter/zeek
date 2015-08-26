@@ -1,5 +1,6 @@
 import logging
 import os
+import datetime
 import logger
 import atexit
 from pymongo import MongoClient
@@ -17,12 +18,18 @@ def writeToFile(session, container):
     global dataFd, errorFd
     # try:
     if (not session.failed):
-        if dataFd is None:
-            filename = container.domain+'/output'+container.random+'.txt'
-            if not os.path.exists(os.path.dirname(filename)):
-                os.makedirs(os.path.dirname(filename))
-            dataFd = open(filename, 'w')
-        dataFd.write(container.content.replace(",","").encode('utf-8') + "\n")
+
+
+
+        # if dataFd is None:
+        filename = container.domain+'/output'+container.random+'.txt'
+        if not os.path.exists(os.path.dirname(filename)):
+            os.makedirs(os.path.dirname(filename))
+        # dataFd = open(filename, 'w')
+
+        hj = open(filename, 'w')
+
+        # dataFd.write(container.content.replace(",","").encode('utf-8') + "\n")
 
          #connect to database and fetch root urls
         client = MongoClient(host="192.168.207.47", port=27100)
@@ -30,9 +37,12 @@ def writeToFile(session, container):
         db = client["summer_db"]
         table = db["news_articles"]
 
-        results = table.insert({"domain":container.domain,"news_content":container.content.replace(",","").encode('utf-8'),"news_title": container.title})
+        results = table.insert({"domain": container.domain,
+                                "news_content": container.content.replace(",", "").encode('utf-8'),
+                                "news_title": container.title, "time_when": datetime.now()})
         client.close()
-        dataFd.close()
+        hj.close()
+        # dataFd.close()
 
 
 
