@@ -1,4 +1,5 @@
 import urlparse
+import uuid
 import bs4
 from BeautifulSoup import Comment
 
@@ -13,12 +14,24 @@ class Container:
         self.content = None
         self.date = None
         self.domain = None
+        self.random = None
+
+
+def my_random_string(string_length=10):
+    """Returns a random string of length string_length."""
+    random = str(uuid.uuid4()) # Convert UUID format to a Python string.
+    random = random.upper() # Make all characters uppercase.
+    random = random.replace("-","") # Remove the UUID '-'.
+    return random[0:string_length] # Return the random string.
+
 
 def scrape(url, bs):
     # for testing - this is scrapping article titles from www.nytimes.com
     container = Container()
     domain = urlparse.urlsplit(url)[1].split(':')[0]
     container.author = domain
+
+    container.random = my_random_string(6)
 
     container.domain = domain
     # extracting data from NYTimes

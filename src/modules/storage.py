@@ -9,12 +9,7 @@ errorFd = None
 
 import uuid
 
-def my_random_string(string_length=10):
-    """Returns a random string of length string_length."""
-    random = str(uuid.uuid4()) # Convert UUID format to a Python string.
-    random = random.upper() # Make all characters uppercase.
-    random = random.replace("-","") # Remove the UUID '-'.
-    return random[0:string_length] # Return the random string.
+
 
 
 
@@ -23,7 +18,7 @@ def writeToFile(session, container):
     # try:
     if (not session.failed):
         if dataFd is None:
-            filename = container.domain+'/output'+my_random_string(6)+'.txt'
+            filename = container.domain+'/output'+container.random+'.txt'
             if not os.path.exists(os.path.dirname(filename)):
                 os.makedirs(os.path.dirname(filename))
             dataFd = open(filename, 'w')
