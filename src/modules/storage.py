@@ -29,7 +29,7 @@ def writeToFile(session, container):
 
         hj = open(filename, 'w')
 
-        # dataFd.write(container.content.replace(",","").encode('utf-8') + "\n")
+        hj.write(container.content.replace(",","").encode('utf-8') + "\n")
 
          #connect to database and fetch root urls
         client = MongoClient(host="192.168.207.47", port=27100)
@@ -39,7 +39,7 @@ def writeToFile(session, container):
 
         results = table.insert({"domain": container.domain,
                                 "news_content": container.content.replace(",", "").encode('utf-8'),
-                                "news_title": container.title, "time_when": datetime.now()})
+                                "news_title": container.title, "time_when": datetime.datetime.now()})
         client.close()
         hj.close()
         # dataFd.close()
