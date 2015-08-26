@@ -12,7 +12,7 @@ logPath = logs/
 userAgent = utiset.com-making_data_intelligent-block_if_unwanted
 crawling = dynamic
 robotParser = false
-crawlDelay = 5
+crawlDelay = 0
 
 [dynamic]
 domainRestricted = true
