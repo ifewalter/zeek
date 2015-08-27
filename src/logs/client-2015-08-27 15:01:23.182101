@@ -1,0 +1,66 @@
+2015-08-27 15:01:23,182 DEBUG:[connect - client.py, 44] Socket initialization
+2015-08-27 15:01:23,182 DEBUG:[connect - client.py, 44] Connecting to host... [127.0.0.1:5050]
+2015-08-27 15:01:23,183 INFO:Connected to [127.0.0.1:5050]
+2015-08-27 15:01:23,183 DEBUG:[readConfig - client.py, 66] Waiting for configuration from the server.
+2015-08-27 15:01:23,186 DEBUG:[readSocket - client.py, 270] Receiving 8536 bytes from server
+2015-08-27 15:01:23,199 DEBUG:[readConfig - client.py, 66] Configuration received.
+2015-08-27 15:01:23,199 INFO:Importing rule.py from server
+2015-08-27 15:01:23,199 INFO:Importing scrapping.py from server
+2015-08-27 15:01:23,254 INFO:Reloading modules imported for server
+2015-08-27 15:01:23,256 DEBUG:[writeSocket - client.py, 259] Sending 145 bytes to server
+2015-08-27 15:01:23,256 DEBUG:[readConfig - client.py, 66] Sending ACK for configuration.
+2015-08-27 15:01:23,257 INFO:
+
+Starting Crawling/Scrapping sequence...
+2015-08-27 15:01:23,257 DEBUG:[interpretingThread - client.py, 178] InterpretingThread started
+2015-08-27 15:01:23,257 DEBUG:[inputThread - client.py, 147] InputThread started
+2015-08-27 15:01:23,258 DEBUG:[outputThread - client.py, 163] OutputThread started
+2015-08-27 15:01:23,258 DEBUG:[crawlingThread - client.py, 199] CrawlingThread started
+2015-08-27 15:01:23,262 DEBUG:[readSocket - client.py, 270] Receiving 207 bytes from server
+2015-08-27 15:01:23,263 DEBUG:[dispatcher - client.py, 242] Dispatching url packet : http://gigaom.com
+2015-08-27 15:01:23,263 DEBUG:[dispatcher - client.py, 242] Dispatched packet of type: URL
+2015-08-27 15:01:23,463 INFO:Scrapping : http://gigaom.com
+2015-08-27 15:01:37,832 DEBUG:POST http://127.0.0.1:63113/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+2015-08-27 15:01:39,770 DEBUG:Finished Request
+2015-08-27 15:01:39,771 DEBUG:POST http://127.0.0.1:63113/hub/session/7773359e-70f5-224a-bd53-a465fad6c115/url {"url": "http://gigaom.com", "sessionId": "7773359e-70f5-224a-bd53-a465fad6c115"}
+2015-08-27 15:02:01,599 DEBUG:Finished Request
+2015-08-27 15:02:01,599 DEBUG:POST http://127.0.0.1:63113/hub/session/7773359e-70f5-224a-bd53-a465fad6c115/timeouts {"sessionId": "7773359e-70f5-224a-bd53-a465fad6c115", "type": "page load", "ms": 60000.0}
+2015-08-27 15:02:05,696 DEBUG:Finished Request
+2015-08-27 15:02:05,696 DEBUG:POST http://127.0.0.1:63113/hub/session/7773359e-70f5-224a-bd53-a465fad6c115/timeouts/async_script {"sessionId": "7773359e-70f5-224a-bd53-a465fad6c115", "ms": 60000.0}
+2015-08-27 15:02:05,710 DEBUG:Finished Request
+2015-08-27 15:02:05,710 DEBUG:GET http://127.0.0.1:63113/hub/session/7773359e-70f5-224a-bd53-a465fad6c115/source {"sessionId": "7773359e-70f5-224a-bd53-a465fad6c115"}
+2015-08-27 15:02:05,948 DEBUG:Finished Request
+2015-08-27 15:02:05,948 DEBUG:DELETE http://127.0.0.1:63113/hub/session/7773359e-70f5-224a-bd53-a465fad6c115 {"sessionId": "7773359e-70f5-224a-bd53-a465fad6c115"}
+2015-08-27 15:02:05,954 DEBUG:Finished Request
+2015-08-27 15:02:06,401 DEBUG:[visit - scrapping.py, 52] Scrapping complete
+2015-08-27 15:02:06,403 DEBUG:[crawlingThread - client.py, 199] Session 
+http://gigaom.com
+Code : 200
+Request time : 2.66572403908
+Bs time : 0.256229877472
+2015-08-27 15:02:06,404 DEBUG:[writeSocket - client.py, 259] Sending 1603 bytes to server
+2015-08-27 15:02:06,404 DEBUG:[outputThread - client.py, 163] Sending obj of type URL
+2015-08-27 15:02:06,406 DEBUG:[writeSocket - client.py, 259] Sending 14089 bytes to server
+2015-08-27 15:02:06,406 DEBUG:[outputThread - client.py, 163] Sending obj of type URL
+2015-08-27 15:02:06,408 DEBUG:[readSocket - client.py, 270] Receiving 278 bytes from server
+2015-08-27 15:02:06,408 DEBUG:[dispatcher - client.py, 242] Dispatching url packet : https://gigaom.com/2015/08/25/politwoops-shutdown-raises-questions-about-twitters-rules/
+2015-08-27 15:02:06,408 DEBUG:[dispatcher - client.py, 242] Dispatched packet of type: URL
+2015-08-27 15:02:06,578 DEBUG:[readSocket - client.py, 270] Receiving 273 bytes from server
+2015-08-27 15:02:06,578 DEBUG:[dispatcher - client.py, 242] Dispatching url packet : https://gigaom.com/2015/08/27/tech-workers-arent-disloyal-theyre-under-appreciated/
+2015-08-27 15:02:06,579 DEBUG:[dispatcher - client.py, 242] Dispatched packet of type: URL
+2015-08-27 15:02:06,579 DEBUG:[readSocket - client.py, 270] Receiving 286 bytes from server
+2015-08-27 15:02:06,579 DEBUG:[dispatcher - client.py, 242] Dispatching url packet : https://gigaom.com/2015/08/20/ahead-of-apple-news-launch-flipboard-adds-voting-to-its-news-feed/
+2015-08-27 15:02:06,579 DEBUG:[dispatcher - client.py, 242] Dispatched packet of type: URL
+2015-08-27 15:02:06,581 DEBUG:[readSocket - client.py, 270] Receiving 233 bytes from server
+2015-08-27 15:02:06,582 DEBUG:[dispatcher - client.py, 242] Dispatching url packet : https://gigaom.com/2015/08/24/hypertext-50/
+2015-08-27 15:02:06,582 DEBUG:[dispatcher - client.py, 242] Dispatched packet of type: URL
+2015-08-27 15:02:06,583 DEBUG:[readSocket - client.py, 270] Receiving 270 bytes from server
+2015-08-27 15:02:06,583 DEBUG:[dispatcher - client.py, 242] Dispatching url packet : https://gigaom.com/2015/08/26/seattle-vs-san-francisco-who-is-tops-in-the-cloud/
+2015-08-27 15:02:06,583 DEBUG:[dispatcher - client.py, 242] Dispatched packet of type: URL
+2015-08-27 15:02:06,608 INFO:Scrapping : https://gigaom.com/2015/08/25/politwoops-shutdown-raises-questions-about-twitters-rules/
+2015-08-27 15:02:08,345 DEBUG:[readSocket - client.py, 270] Receiving 242 bytes from server
+2015-08-27 15:02:08,346 DEBUG:[dispatcher - client.py, 242] Dispatching url packet : https://gigaom.com/2015/08/24/hypertext-50/#comments
+2015-08-27 15:02:08,346 DEBUG:[dispatcher - client.py, 242] Dispatched packet of type: URL
+2015-08-27 15:02:16,266 DEBUG:POST http://127.0.0.1:63215/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+2015-08-27 15:02:16,469 DEBUG:Finished Request
+2015-08-27 15:02:16,470 DEBUG:POST http://127.0.0.1:63215/hub/session/f1fd9ef5-dc6c-bb42-8173-0362186cfa7d/url {"url": "https://gigaom.com/2015/08/25/politwoops-shutdown-raises-questions-about-twitters-rules/", "sessionId": "f1fd9ef5-dc6c-bb42-8173-0362186cfa7d"}

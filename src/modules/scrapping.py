@@ -11,6 +11,14 @@ import traceback
 import urlparse
 from bs4 import BeautifulSoup
 
+
+
+
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium import webdriver
+
 robotDict = {}
 
 class Session:
@@ -72,12 +80,42 @@ class Scrapper:
             opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
             request = urllib2.Request(url)
             request.add_header('User-agent', self.userAgent)
-            data = opener.open(request, timeout=4)
+            data = opener.open(request, timeout=60)
             urlRequestTime = time.time() - start_time
+
+
+
+
+
+
+
+            #Inject Selenium
+
+
+
+            profile = webdriver.FirefoxProfile()
+            profile.set_preference("general.useragent.override", self.userAgent)
+
+
+            # Start the WebDriver and load the page
+            wd = webdriver.Firefox(profile)
+
+            wd.get(url)
+
+            wd.set_page_load_timeout(60)
+            wd.set_script_timeout(60)
+
+
+            # And grab the page HTML source
+            html_page = wd.page_source
+            wd.quit()
+
+
+
 
             # parsing
             start_time = time.time()
-            bs = BeautifulSoup(data, 'lxml')
+            bs = BeautifulSoup(html_page, 'lxml')
             bsParsingTime = time.time() - start_time
 
             # url scrapping - dynamic crawling
@@ -97,6 +135,7 @@ class Scrapper:
                 foundUrl = set(links)
 
             # data scrapping
+
             dataContainer = rule.scrape(url, bs)
             if dataContainer is None:
                 raise("None data container object")

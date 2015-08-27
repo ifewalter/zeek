@@ -1,0 +1,21 @@
+2015-08-27 07:30:38,810 DEBUG:[setup - server.py, 52] Socket initialization
+2015-08-27 07:30:38,810 INFO:Listening on [127.0.0.1:5050]
+2015-08-27 07:30:38,811 INFO:Waiting for working nodes to connect...
+2015-08-27 07:30:47,829 INFO:[127.0.0.1:61106] Working node connected
+2015-08-27 07:30:47,829 DEBUG:[run - server.py, 64] Starting beginCrawlingProcedure
+2015-08-27 07:30:47,830 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:61106] Sending configuration
+2015-08-27 07:30:47,854 INFO:Starting server storageRoutine
+2015-08-27 07:30:47,879 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:61106] Sending 7848 bytes
+2015-08-27 07:30:47,855 INFO:Starting server mainRoutine
+2015-08-27 07:30:47,879 INFO:Starting server urlDispatcher
+2015-08-27 07:30:47,880 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:61106] Configuration sent waiting for ACK
+2015-08-27 07:30:47,935 DEBUG:[readSocket - server.py, 325] [127.0.0.1:61106] Receiving 129 bytes
+2015-08-27 07:30:47,938 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:61106] Working node ACK received (configuration)
+2015-08-27 07:30:47,940 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:61106] Sending 242 bytes
+2015-08-27 07:30:47,940 DEBUG:[inputThread - server.py, 242] [127.0.0.1:61106] Listening for packets
+2015-08-27 07:30:47,943 DEBUG:[outputThread - server.py, 255] [127.0.0.1:61106] Sending URL http://businessinsider.com/politics/
+2015-08-27 07:30:56,313 DEBUG:[readSocket - server.py, 325] [127.0.0.1:61106] Receiving 182 bytes
+2015-08-27 07:30:56,315 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-27 07:30:56,315 INFO:[127.0.0.1:61106] Receiving scrapped URLs :   0   /    0    -   0  
+2015-08-27 07:31:09,865 INFO:[127.0.0.1:61106] Lost connection
+2015-08-27 07:31:10,018 INFO:[127.0.0.1:61106] Disconnecting

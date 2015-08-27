@@ -1,0 +1,35 @@
+2015-08-27 07:50:14,948 DEBUG:[setup - server.py, 52] Socket initialization
+2015-08-27 07:50:14,948 INFO:Listening on [127.0.0.1:5050]
+2015-08-27 07:50:14,948 INFO:Waiting for working nodes to connect...
+2015-08-27 07:50:23,306 INFO:[127.0.0.1:61166] Working node connected
+2015-08-27 07:50:23,306 DEBUG:[run - server.py, 64] Starting beginCrawlingProcedure
+2015-08-27 07:50:23,307 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:61166] Sending configuration
+2015-08-27 07:50:23,307 INFO:Starting server mainRoutine
+2015-08-27 07:50:23,308 INFO:Starting server storageRoutine
+2015-08-27 07:50:23,307 INFO:Starting server urlDispatcher
+2015-08-27 07:50:23,336 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:61166] Sending 7832 bytes
+2015-08-27 07:50:23,338 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:61166] Configuration sent waiting for ACK
+2015-08-27 07:50:23,689 DEBUG:[readSocket - server.py, 325] [127.0.0.1:61166] Receiving 129 bytes
+2015-08-27 07:50:23,691 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:61166] Working node ACK received (configuration)
+2015-08-27 07:50:23,692 DEBUG:[inputThread - server.py, 242] [127.0.0.1:61166] Listening for packets
+2015-08-27 07:50:23,692 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:61166] Sending 228 bytes
+2015-08-27 07:50:23,697 DEBUG:[outputThread - server.py, 255] [127.0.0.1:61166] Sending URL http://gigaom.com.com/
+2015-08-27 07:50:35,426 DEBUG:[readSocket - server.py, 325] [127.0.0.1:61166] Receiving 182 bytes
+2015-08-27 07:50:35,427 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-27 07:50:35,428 INFO:[127.0.0.1:61166] Receiving scrapped URLs :   0   /    0    -   0  
+2015-08-27 07:50:35,428 DEBUG:[readSocket - server.py, 325] [127.0.0.1:61166] Receiving 3467 bytes
+2015-08-27 07:50:35,520 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-27 07:50:35,520 INFO:[127.0.0.1:61166] Receiving scrapped data
+2015-08-27 07:50:35,521 DEBUG:[dispatcher - server.py, 271] [127.0.0.1:61166] Receiving scrapped datahttp://gigaom.com.com/
+2015-08-27 07:50:55,643 ERROR:
+Traceback (most recent call last):
+  File "server.py", line 191, in storageRoutine
+    storage.writeToFile(session, session.dataContainer)
+  File "/Users/iFewalter/Workspace/Library/Zeek/src/modules/storage.py", line 35, in writeToFile
+    client = MongoClient(host="192.168.207.47", port=27100)
+  File "/Library/Python/2.7/site-packages/pymongo/mongo_client.py", line 369, in __init__
+    raise ConnectionFailure(str(e))
+ConnectionFailure: timed out
+
+2015-08-27 07:51:02,774 INFO:[127.0.0.1:61166] Lost connection
+2015-08-27 07:51:02,809 INFO:[127.0.0.1:61166] Disconnecting

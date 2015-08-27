@@ -1,0 +1,47 @@
+2015-08-27 15:01:20,333 DEBUG:[setup - server.py, 52] Socket initialization
+2015-08-27 15:01:20,334 INFO:Listening on [127.0.0.1:5050]
+2015-08-27 15:01:20,334 INFO:Waiting for working nodes to connect...
+2015-08-27 15:01:23,183 INFO:[127.0.0.1:63110] Working node connected
+2015-08-27 15:01:23,183 DEBUG:[run - server.py, 64] Starting beginCrawlingProcedure
+2015-08-27 15:01:23,183 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:63110] Sending configuration
+2015-08-27 15:01:23,185 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:63110] Sending 8552 bytes
+2015-08-27 15:01:23,185 INFO:Starting server urlDispatcher
+2015-08-27 15:01:23,185 INFO:Starting server mainRoutine
+2015-08-27 15:01:23,186 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:63110] Configuration sent waiting for ACK
+2015-08-27 15:01:23,185 INFO:Starting server storageRoutine
+2015-08-27 15:01:23,257 DEBUG:[readSocket - server.py, 325] [127.0.0.1:63110] Receiving 129 bytes
+2015-08-27 15:01:23,259 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:63110] Working node ACK received (configuration)
+2015-08-27 15:01:23,260 DEBUG:[inputThread - server.py, 242] [127.0.0.1:63110] Listening for packets
+2015-08-27 15:01:23,261 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:63110] Sending 223 bytes
+2015-08-27 15:01:23,264 DEBUG:[outputThread - server.py, 255] [127.0.0.1:63110] Sending URL http://gigaom.com
+2015-08-27 15:02:06,404 DEBUG:[readSocket - server.py, 325] [127.0.0.1:63110] Receiving 1587 bytes
+2015-08-27 15:02:06,405 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-27 15:02:06,406 INFO:[127.0.0.1:63110] Receiving scrapped URLs :   19  /    0    -   0  
+2015-08-27 15:02:06,407 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:63110] Sending 294 bytes
+2015-08-27 15:02:06,408 DEBUG:[outputThread - server.py, 255] [127.0.0.1:63110] Sending URL https://gigaom.com/2015/08/25/politwoops-shutdown-raises-questions-about-twitters-rules/
+2015-08-27 15:02:06,408 DEBUG:[readSocket - server.py, 325] [127.0.0.1:63110] Receiving 14073 bytes
+2015-08-27 15:02:06,577 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:63110] Sending 289 bytes
+2015-08-27 15:02:06,578 DEBUG:[outputThread - server.py, 255] [127.0.0.1:63110] Sending URL https://gigaom.com/2015/08/27/tech-workers-arent-disloyal-theyre-under-appreciated/
+2015-08-27 15:02:06,578 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:63110] Sending 302 bytes
+2015-08-27 15:02:06,579 DEBUG:[outputThread - server.py, 255] [127.0.0.1:63110] Sending URL https://gigaom.com/2015/08/20/ahead-of-apple-news-launch-flipboard-adds-voting-to-its-news-feed/
+2015-08-27 15:02:06,581 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:63110] Sending 249 bytes
+2015-08-27 15:02:06,582 DEBUG:[outputThread - server.py, 255] [127.0.0.1:63110] Sending URL https://gigaom.com/2015/08/24/hypertext-50/
+2015-08-27 15:02:06,582 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:63110] Sending 286 bytes
+2015-08-27 15:02:06,583 DEBUG:[outputThread - server.py, 255] [127.0.0.1:63110] Sending URL https://gigaom.com/2015/08/26/seattle-vs-san-francisco-who-is-tops-in-the-cloud/
+2015-08-27 15:02:08,311 DEBUG:[dispatcher - server.py, 271] Dispatching packet of type: URL
+2015-08-27 15:02:08,312 INFO:[127.0.0.1:63110] Receiving scrapped data
+2015-08-27 15:02:08,314 DEBUG:[dispatcher - server.py, 271] [127.0.0.1:63110] Receiving scrapped datahttp://gigaom.com
+2015-08-27 15:02:08,345 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:63110] Sending 258 bytes
+2015-08-27 15:02:08,345 DEBUG:[outputThread - server.py, 255] [127.0.0.1:63110] Sending URL https://gigaom.com/2015/08/24/hypertext-50/#comments
+2015-08-27 15:02:17,169 INFO:[127.0.0.1:63110] Lost connection
+2015-08-27 15:02:17,420 INFO:[127.0.0.1:63110] Disconnecting
+2015-08-27 15:02:28,370 ERROR:
+Traceback (most recent call last):
+  File "server.py", line 191, in storageRoutine
+    storage.writeToFile(session, session.dataContainer)
+  File "/Users/iFewalter/Workspace/Library/Zeek/src/modules/storage.py", line 35, in writeToFile
+    client = MongoClient(host="192.168.207.47", port=27100)
+  File "/Library/Python/2.7/site-packages/pymongo/mongo_client.py", line 369, in __init__
+    raise ConnectionFailure(str(e))
+ConnectionFailure: timed out
+

@@ -1,0 +1,25 @@
+2015-08-27 14:58:30,481 DEBUG:[setup - server.py, 52] Socket initialization
+2015-08-27 14:58:30,482 INFO:Listening on [127.0.0.1:5050]
+2015-08-27 14:58:30,482 INFO:Waiting for working nodes to connect...
+2015-08-27 14:58:33,359 INFO:[127.0.0.1:63096] Working node connected
+2015-08-27 14:58:33,359 DEBUG:[run - server.py, 64] Starting beginCrawlingProcedure
+2015-08-27 14:58:33,359 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:63096] Sending configuration
+2015-08-27 14:58:33,359 INFO:Starting server urlDispatcher
+2015-08-27 14:58:33,434 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:63096] Sending 8557 bytes
+2015-08-27 14:58:33,433 INFO:Starting server storageRoutine
+2015-08-27 14:58:33,434 INFO:Starting server mainRoutine
+2015-08-27 14:58:33,435 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:63096] Configuration sent waiting for ACK
+2015-08-27 14:58:33,467 DEBUG:[readSocket - server.py, 325] [127.0.0.1:63096] Receiving 129 bytes
+2015-08-27 14:58:33,468 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:63096] Working node ACK received (configuration)
+2015-08-27 14:58:33,471 DEBUG:[inputThread - server.py, 242] [127.0.0.1:63096] Listening for packets
+2015-08-27 14:58:33,471 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:63096] Sending 228 bytes
+2015-08-27 14:58:33,474 DEBUG:[outputThread - server.py, 255] [127.0.0.1:63096] Sending URL http://gigaom.com.com/
+2015-08-27 14:58:43,928 INFO:[127.0.0.1:63096] Lost connection
+2015-08-27 14:58:44,073 INFO:[127.0.0.1:63096] Disconnecting
+2015-08-27 15:01:03,581 INFO:[127.0.0.1:63107] Working node connected
+2015-08-27 15:01:03,582 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:63107] Sending configuration
+2015-08-27 15:01:03,584 DEBUG:[writeSocket - server.py, 317] [127.0.0.1:63107] Sending 8557 bytes
+2015-08-27 15:01:03,587 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:63107] Configuration sent waiting for ACK
+2015-08-27 15:01:03,627 DEBUG:[readSocket - server.py, 325] [127.0.0.1:63107] Receiving 129 bytes
+2015-08-27 15:01:03,627 DEBUG:[sendConfig - server.py, 218] [127.0.0.1:63107] Working node ACK received (configuration)
+2015-08-27 15:01:03,628 DEBUG:[inputThread - server.py, 242] [127.0.0.1:63107] Listening for packets

@@ -1,0 +1,2 @@
+2015-08-27 07:29:35,460 DEBUG:[connect - client.py, 44] Socket initialization
+2015-08-27 07:29:35,460 DEBUG:[connect - client.py, 44] Connecting to host... [192.168.196.44:5050]

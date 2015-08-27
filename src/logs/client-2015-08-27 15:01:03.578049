@@ -1,0 +1,20 @@
+2015-08-27 15:01:03,578 DEBUG:[connect - client.py, 44] Socket initialization
+2015-08-27 15:01:03,578 DEBUG:[connect - client.py, 44] Connecting to host... [127.0.0.1:5050]
+2015-08-27 15:01:03,579 INFO:Connected to [127.0.0.1:5050]
+2015-08-27 15:01:03,579 DEBUG:[readConfig - client.py, 66] Waiting for configuration from the server.
+2015-08-27 15:01:03,585 DEBUG:[readSocket - client.py, 270] Receiving 8541 bytes from server
+2015-08-27 15:01:03,619 DEBUG:[readConfig - client.py, 66] Configuration received.
+2015-08-27 15:01:03,620 INFO:Importing rule.py from server
+2015-08-27 15:01:03,620 INFO:Importing scrapping.py from server
+2015-08-27 15:01:03,624 INFO:Reloading modules imported for server
+2015-08-27 15:01:03,627 DEBUG:[writeSocket - client.py, 259] Sending 145 bytes to server
+2015-08-27 15:01:03,627 DEBUG:[readConfig - client.py, 66] Sending ACK for configuration.
+2015-08-27 15:01:03,627 INFO:
+
+Starting Crawling/Scrapping sequence...
+2015-08-27 15:01:03,627 DEBUG:[outputThread - client.py, 163] OutputThread started
+2015-08-27 15:01:03,628 DEBUG:[interpretingThread - client.py, 178] InterpretingThread started
+2015-08-27 15:01:03,628 DEBUG:[crawlingThread - client.py, 199] CrawlingThread started
+2015-08-27 15:01:03,629 DEBUG:[inputThread - client.py, 147] InputThread started
+2015-08-27 15:01:13,210 INFO:
+Lost connection to server [127.0.0.1:5050]

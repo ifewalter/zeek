@@ -44,16 +44,18 @@ def scrape(url, bs):
 
     # get text
 
-    #comments = bs.findAll(text=lambda text: isinstance(text, Comment))
-    #[comment.extract() for comment in comments]
+    comments = bs.findAll(text=lambda text: isinstance(text, Comment))
+    [comment.extract() for comment in comments]
 
     content_text = bs.get_text()
 
+    print content_text
+
     # break into lines and remove leading and trailing space on each
-   # lines = (line.strip() for line in content_text.splitlines())
+    lines = (line.strip() for line in content_text.splitlines())
     # break multi-headlines into a line each
-    #chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+    chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
     # drop blank lines
-    #container.content = '\n'.join(chunk for chunk in chunks if chunk)
+    container.content = '\n'.join(chunk for chunk in chunks if chunk)
     container.content = content_text
     return container
