@@ -17,6 +17,9 @@ from bs4 import BeautifulSoup
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+
+from pyvirtualdisplay import Display
+
 from selenium import webdriver
 
 robotDict = {}
@@ -92,6 +95,8 @@ class Scrapper:
             #Inject Selenium
 
 
+            display = Display(visible=0, size=(1024, 768))
+            display.start()
 
             profile = webdriver.FirefoxProfile()
             profile.set_preference("general.useragent.override", self.userAgent)
@@ -109,6 +114,9 @@ class Scrapper:
             # And grab the page HTML source
             html_page = wd.page_source
             wd.quit()
+
+            
+            display.stop()
 
 
 
